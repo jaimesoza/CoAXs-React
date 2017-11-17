@@ -29,11 +29,11 @@ class LoadingPage extends React.Component {
 
 
     return (
-      <div className="loadingPage">
+      <div className="loadingBar">
         <Line
           progress={this.props.progress}
           options={{
-            strokeWidth: 0.8,
+            strokeWidth: 0.5,
             color: "#5dc2f4",
             easing: 'easeInOut',
 

@@ -1,5 +1,5 @@
 .loadingPage{
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -14,5 +14,9 @@
   margin: auto;
   width: 220px;
   height: 220px;
+  opacity: 1;
+}
+.loadingBar{
+  z-index: 9999;
   opacity: 1;
 }
