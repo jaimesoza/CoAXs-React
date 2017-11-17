@@ -6,6 +6,7 @@
 import React from "react";
 import ProgressBar from "react-progressbar.js"
 import Animal from "./animal.gif"
+import Background from "./background.png"
 import s from "./LoadingPage.css"
 
 //bind redux
@@ -26,7 +27,6 @@ class LoadingPage extends React.Component {
   render() {
 
     var Line = ProgressBar.Line;
-
 
     return (
       <div className="loadingBar">
@@ -52,9 +52,11 @@ class LoadingPage extends React.Component {
 
         <img src={Animal} className="loadingLogo" />
 
-
+		<img src={Background} className="loadingPage" />
 
       </div>
+	  
+	  
 
     );
   }
