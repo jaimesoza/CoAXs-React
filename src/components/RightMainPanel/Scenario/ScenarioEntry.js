@@ -38,7 +38,7 @@ class ScenarioEntry extends React.Component {
             <small style={{fontSize: 14,}}>
 
               {/*<OverlayTrigger placement="bottom">*/}
-                <span>{this.props.data[corridorKey].active? "On": "Off"}</span>
+                <span>{this.props.data[corridorKey].active? "Si": "No"}</span>
 
               {/*</OverlayTrigger>*/}
 
@@ -57,7 +57,7 @@ class ScenarioEntry extends React.Component {
 
 
             <div className="subHead scenarioEntrySubHead" style={{color: "white", backgroundColor: "#e9bc69"}}>
-              {this.props.index === 0 ? "Base Scenario" : "New Scenario"  }
+              {this.props.index === 0 ? "Escenario Base" : "Nuevo Escenario"  }
             </div>
 
             {ScenarioValue}
@@ -71,7 +71,7 @@ class ScenarioEntry extends React.Component {
         <div className="scenarioEntry">
           <div className="" style={{margin: 0, padding: 0}}>
             <div className="subHead scenarioEntrySubHead" style={{color: "white", backgroundColor: "#eec16f"}}>
-              {this.props.index === 0 ? "Base Scenario" : "New Scenario"   }
+              {this.props.index === 0 ? "Escenario Base" : "Nuevo Escenario"   }
             </div>
 
             {ScenarioValue}

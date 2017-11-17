@@ -1,17 +1,18 @@
 .loadingPage{
-  z-index: 9999;
+  z-index: 1;
   position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
-  opacity: 0.98;
+  opacity: 0.15;
 }
 
 .loadingLogo{
+  z-index: 999 ;
   position: absolute;
   top: 0; bottom:0; left: 0; right:0;
   margin: auto;
   width: 220px;
   height: 220px;
-
+  opacity: 1;
 }

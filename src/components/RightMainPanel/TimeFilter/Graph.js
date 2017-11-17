@@ -34,13 +34,13 @@ class Graph extends React.Component {
 
     if (this.props.isCompareMode && this.props.gridNumber1 !== undefined) {
       var data = [
-        {name: 'Base Scenario', job: null},
-        {name: 'New Scenario', job: null},
+        {name: 'Escenario Base', job: null},
+        {name: 'Nuevo Escenario', job: null},
       ];
     }
     else {
       var data = [
-        {name: 'Baseline Scenario', job: null},
+        {name: 'Escenario Base', job: null},
       ];
     }
 
@@ -55,13 +55,13 @@ class Graph extends React.Component {
     //EDU
     if (this.props.isCompareMode && this.props.gridNumber1 !== undefined) {
       var dataedu = [
-        {name: 'Base Scenario', edu3060: null, edu6075: null, edu7590: null, edunorank: null, },
-        {name: 'New Scenario', edu3060: null, edu6075: null, edu7590: null, edunorank: null,},
+        {name: 'Escenario Base', edu3060: null, edu6075: null, edu7590: null, edunorank: null, },
+        {name: 'Nuevo Escenario', edu3060: null, edu6075: null, edu7590: null, edunorank: null,},
       ];
     }
     else {
       var dataedu = [
-        {name: 'Baseline Scenario', edu3060: null, edu6075: null, edu7590: null, edunorank: null,},
+        {name: 'Escenario Base', edu3060: null, edu6075: null, edu7590: null, edunorank: null,},
       ];
     }
     dataedu[0].edu3060 = this.props.edu3060;
@@ -78,13 +78,13 @@ class Graph extends React.Component {
     //Health
     if (this.props.isCompareMode && this.props.gridNumber1 !== undefined) {
       var datahet = [
-        {name: 'Base Scenario', hetpri: null, hetsec: null, hetter: null, },
-        {name: 'New Scenario', hetpri: null, hetsec: null, hetter: null, },
+        {name: 'Escenario Base', hetpri: null, hetsec: null, hetter: null, },
+        {name: 'Nuevo Escenario', hetpri: null, hetsec: null, hetter: null, },
       ];
     }
     else {
       var datahet = [
-        {name: 'Baseline Scenario', hetpri: null, hetsec: null, hetter: null, },
+        {name: 'Escenario Base', hetpri: null, hetsec: null, hetter: null, },
       ];
     }
     datahet[0].hetpri = this.props.hetpri;
@@ -115,9 +115,9 @@ class Graph extends React.Component {
     return (
       <div >
         <br/>
-        <div style={{marginTop: -20, marginLeft: 8}}>
+        <div style={{marginTop: -20, marginLeft: 10}}>
 
-          <h5>Jobs Reachable
+          <h5>Plazas de Trabajo
             {/*<OverlayTrigger placement="bottom" overlay={tooltipforJob}>*/}
               {/*<i className="fa fa-question-circle-o questionMark"/>*/}
             {/*</OverlayTrigger>*/}
@@ -127,7 +127,7 @@ class Graph extends React.Component {
 
 
           {/*JOB*/}
-          <BarChart width={392} height={200} data={data} layout="vertical">
+          <BarChart width={390} height={200} data={data} layout="vertical">
 
             <XAxis stroke="black" type="number" domain={[0, 2000000]} tickFormatter={axisFormatter}/>
             <YAxis dataKey="name" stroke="black" type="category"/>
@@ -145,7 +145,7 @@ class Graph extends React.Component {
           </BarChart>
 
 
-          <h5>Education Reachable
+          <h5>Establecimientos Educacionales
             {/*<OverlayTrigger placement="bottom" overlay={tooltipforJob}>*/}
             {/*<i className="fa fa-question-circle-o questionMark"/>*/}
             {/*</OverlayTrigger>*/}
@@ -154,7 +154,7 @@ class Graph extends React.Component {
 
           {/*EDU*/}
 
-          <BarChart width={392} height={200} data={dataedu} layout="vertical">
+          <BarChart width={390} height={200} data={dataedu} layout="vertical">
 
             <XAxis stroke="black" type="number" domain={[0, 4000]} tickFormatter={axisFormatter}/>
             <YAxis dataKey="name" stroke="black" type="category"/>
@@ -200,7 +200,7 @@ class Graph extends React.Component {
 
 
 
-          <h5>Health Reachable
+          <h5>Servicios de Salud
             {/*<OverlayTrigger placement="bottom" overlay={tooltipforJob}>*/}
             {/*<i className="fa fa-question-circle-o questionMark"/>*/}
             {/*</OverlayTrigger>*/}
@@ -209,7 +209,7 @@ class Graph extends React.Component {
 
           {/*HEALTH*/}
 
-          <BarChart width={392} height={200} data={datahet} layout="vertical">
+          <BarChart width={390} height={200} data={datahet} layout="vertical">
 
             <XAxis stroke="black" type="number" domain={[0, 400]} tickFormatter={axisFormatter}/>
             <YAxis dataKey="name" stroke="black" type="category"/>

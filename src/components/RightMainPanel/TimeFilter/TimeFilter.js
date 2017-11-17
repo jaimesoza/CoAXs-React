@@ -64,7 +64,7 @@ class TimeFilter extends React.Component {
       <div className="timeFilterPanel">
         <div className="colHead">
           <i className="fa fa-clock-o"></i>
-          Time Map
+          Tiempo de Viaje
         </div>
 
 

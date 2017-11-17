@@ -33,8 +33,8 @@ class LoadingPage extends React.Component {
         <Line
           progress={this.props.progress}
           options={{
-            strokeWidth: 0.3,
-            color: "#ED6A5A",
+            strokeWidth: 0.8,
+            color: "#5dc2f4",
             easing: 'easeInOut',
 
 

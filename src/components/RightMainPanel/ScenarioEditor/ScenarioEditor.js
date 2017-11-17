@@ -72,7 +72,7 @@ class ScenarioEditor extends React.Component {
 
         <div className="colHead">
           <i className="fa fa-pencil-square-o"/>
-          Service Editor
+          Selección de Proyectos
         </div>
 
 

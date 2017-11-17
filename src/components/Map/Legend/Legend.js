@@ -46,7 +46,7 @@ class Legend extends React.Component {
           <div className="panel panel-default">
             <div className="panel-heading">
               <h6 className="panel-title">
-                Legend
+                Leyenda
                 <i className="fa fa-expand pull-right" onClick={this.handleClickExpend}/>
               </h6>
             </div>
@@ -65,21 +65,21 @@ class Legend extends React.Component {
                 <svg height="10" width="20">
                   <line x1="0" y1="5" x2="20" y2="5" style={{stroke: "#555555", strokeWidth: 5}}/>
                 </svg>
-                <small className="panel-word">L7</small>
+                <small className="panel-word">Línea 7</small>
               </div>
 
               <div>
                 <svg height="10" width="20">
                   <line x1="0" y1="5" x2="20" y2="5" style={{stroke: "#8d6aa8", strokeWidth: 5}}/>
                 </svg>
-                <small className="panel-word">TLC</small>
+                <small className="panel-word">Tranvía Las Condes</small>
               </div>
 
               <div>
                 <svg height="10" width="20">
                   <line x1="0" y1="5" x2="20" y2="5" style={{stroke: "#37bf86", strokeWidth: 5}}/>
                 </svg>
-                <small className="panel-word">TBi</small>
+                <small className="panel-word">Teleférico Bicentenario</small>
               </div>
 
 
@@ -102,14 +102,14 @@ class Legend extends React.Component {
                 <svg width="20" height="20">
                   <rect width="20" height="20" style={{fill: "#89cff0", strokeWidth: 3, stroke: "#45b3e7"}}/>
                 </svg>
-                <small className="panel-word">Baseline accessiblity area</small>
+                <small className="panel-word">Accesibilidad Base</small>
               </div>
 
               <div>
                 <svg width="20" height="20">
                   <rect width="20" height="20" style={{fill: "#FDB813", strokeWidth: 3, stroke: "#F68B1F"}}/>
                 </svg>
-                <small className="panel-word">New scenario accessiblity area</small>
+                <small className="panel-word">Accesibilidad en Escenario</small>
               </div>
 
               {/*<div>*/}
