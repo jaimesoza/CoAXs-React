@@ -109,7 +109,7 @@ class Legend extends React.Component {
                 <svg width="20" height="20">
                   <rect width="20" height="20" style={{fill: "#FDB813", strokeWidth: 3, stroke: "#F68B1F"}}/>
                 </svg>
-                <small className="panel-word">Accesibilidad en Escenario</small>
+                <small className="panel-word">Accesibilidad en Escenario Nuevo</small>
               </div>
 
               {/*<div>*/}
