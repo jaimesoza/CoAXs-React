@@ -130,7 +130,7 @@ class Graph extends React.Component {
           <BarChart width={390} height={200} data={data} layout="vertical">
 
             <XAxis stroke="black" type="number" domain={[0, 2000000]} tickFormatter={axisFormatter}/>
-            <YAxis dataKey="name" stroke="black" type="category"/>
+            <YAxis width={70} dataKey="name" stroke="black" type="category"/>
 
             <CartesianGrid strokeDasharray="3 3"/>
 
@@ -157,7 +157,7 @@ class Graph extends React.Component {
           <BarChart width={390} height={200} data={dataedu} layout="vertical">
 
             <XAxis stroke="black" type="number" domain={[0, 4000]} tickFormatter={axisFormatter}/>
-            <YAxis dataKey="name" stroke="black" type="category"/>
+            <YAxis width={70} dataKey="name" stroke="black" type="category"/>
 
             <CartesianGrid strokeDasharray="3 3"/>
             <Tooltip/>
@@ -212,7 +212,7 @@ class Graph extends React.Component {
           <BarChart width={390} height={200} data={datahet} layout="vertical">
 
             <XAxis stroke="black" type="number" domain={[0, 400]} tickFormatter={axisFormatter}/>
-            <YAxis dataKey="name" stroke="black" type="category"/>
+            <YAxis width={70} dataKey="name" stroke="black" type="category"/>
 
             <CartesianGrid strokeDasharray="3 3"/>
             <Tooltip/>
